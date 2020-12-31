@@ -1,0 +1,65 @@
+*{
+    box-sizing: border-box;
+}
+header {
+    background-image: url("img/other/background-header.png");
+}
+.headers-text {
+    font-family: 'Roboto Slab', serif;
+    color: white;
+}
+.nav-panel {
+    margin: auto;
+    padding-top: 30px;
+    width: 940px;
+    display: flex;
+    justify-content: space-between;
+}
+.Mlogo {
+    margin-top: 140px;
+    display: block;
+    text-align: center;
+}
+.hello {
+    font-size: 35px;
+    margin-top: 50px;
+    font-weight: normal;
+    text-align: center;
+}
+.name-intro {
+    margin-top: 30px;
+    font-weight: lighter;
+    text-align: center;
+    font-size: 66px;
+}
+.name {
+    font-weight: bold;
+}
+.born {
+    margin-top: 40px;
+    font-weight: lighter;
+    text-align: center;
+    font-size: 22px;
+}
+.social {
+    margin-top: 50px;
+    display: block;
+    text-align: center;
+}
+.intro {
+    width: 775px;
+    display: flex;
+    margin: auto;
+    margin-top: 140px;
+    justify-content: space-between;
+}
+.intro .item {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    color: white;
+}
+.yellow-text {
+    color: #ffd670;
+}
