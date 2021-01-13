@@ -11,9 +11,12 @@ header {
 .nav-panel {
     margin: auto;
     padding-top: 30px;
-    width: 940px;
+    width: 935px;
     display: flex;
     justify-content: space-between;
+    font-weight: bold;
+    font-size: 15px;
+    letter-spacing: 1px;
 }
 .Mlogo {
     margin-top: 140px;
@@ -25,12 +28,14 @@ header {
     margin-top: 50px;
     font-weight: normal;
     text-align: center;
+    letter-spacing: 0.025em;
 }
 .name-intro {
     margin-top: 30px;
-    font-weight: lighter;
+    font-weight: 100;
     text-align: center;
     font-size: 66px;
+    letter-spacing: 0.025em;
 }
 .name {
     font-weight: bold;
@@ -52,6 +57,7 @@ header {
     margin: auto;
     margin-top: 140px;
     justify-content: space-between;
+    padding-bottom: 125px;
 }
 .intro .item {
     font-family: 'Open Sans', sans-serif;
@@ -62,4 +68,117 @@ header {
 }
 .yellow-text {
     color: #ffd670;
+}
+.about {
+    background-image:url("img/aboutBackground.png");
+}
+.about-underscore {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+}
+.about-header {
+    text-align: center;
+    font-weight: Regular;
+    letter-spacing: 1px;
+    font-size: 35px;
+    margin-top: 20px;
+}
+.about-question {
+    text-align: center;
+    font-weight: Regular;
+    color: #d0c6db;
+    font-size: 16px;
+    margin-top: 20px;
+}
+.menInCircle {
+    display: block;
+    margin: auto;
+    padding-top: 150px;
+}
+.about-flexRow
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 110px;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+.about-introduce {
+    display: block;
+    width: 520px;
+}
+.about-introduce > h2 {
+    font-size: 18px;
+    font-weight: regular;
+}
+.about-introduce > :nth-child(odd) {
+    margin-bottom: 45px;
+}
+.about-introduce > p {
+    font-family: 'Roboto Slab', serif;
+    color: #a49eb0;
+    font-size: 15px;
+    font-weight: regular;
+    line-height: 18px;
+}
+.mySkills > h2 {
+    font-size: 18px;
+    font-weight: regular;
+    margin-bottom: 38px;
+}
+.mySkills > h3 {
+    font-size: 15px;
+    font-weight: regular;
+    color: #c4c0cf;
+    margin-bottom: 19px;
+}
+.mySkills > h3:last-of-type {
+    margin-top: 20px;
+}
+[class|=progressbars] {
+    border-radius: 5px;
+    background-color: #615474;
+}
+.progressbars__item {
+    border-radius: 5px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 13px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffd670;
+    margin-bottom: 14px;
+}
+.progressbar__name {
+    color:#ffffff;
+}
+.progressbar__value{
+    color:#87765e;
+}
+.progressbars--design__photoshop > *{
+    height: 42px;
+    width: 515px;
+    
+}
+.progressbars--design__illustrator > *{
+    height: 42px;
+    width: 515px * 0.45;
+}
+.progressbars--design__indesign > *{
+    height: 42px;
+    width: 515px * 0.15;
+}
+.progressbars--coding__html {
+    height: 42px;
+    width: 515px * 0.8;
+}
+.progressbars--coding__css {
+    height: 42px;
+    width: 515px * 0.72;
+}
+.progressbars--coding__js {
+    height: 42px;
+    width: 515px * 0.45;
 }
