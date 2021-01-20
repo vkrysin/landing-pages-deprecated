@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 header {
-    background-image: url("img/other/background-header.png");
+    background-image: url("img/aboutBackground.png");
 }
 .headers-text {
     font-family: 'Roboto Slab', serif;
@@ -71,6 +71,7 @@ header {
 }
 .about {
     background-image:url("img/aboutBackground.png");
+    padding-bottom: 105px;
 }
 .about-underscore {
     display: block;
@@ -96,8 +97,7 @@ header {
     margin: auto;
     padding-top: 150px;
 }
-.about-flexRow
-{
+.about-flexRow {
     display: flex;
     justify-content: space-between;
     margin-top: 110px;
@@ -106,7 +106,8 @@ header {
 }
 .about-introduce {
     display: block;
-    width: 520px;
+    white-space: normal;
+    width: 450px;
 }
 .about-introduce > h2 {
     font-size: 18px;
@@ -136,7 +137,11 @@ header {
 .mySkills > h3:last-of-type {
     margin-top: 20px;
 }
-[class|=progressbars] {
+[class|=progressbars--design] > * {
+    border-radius: 5px;
+    background-color: #615474;
+}
+[class|=progressbars--coding] > * {
     border-radius: 5px;
     background-color: #615474;
 }
@@ -149,36 +154,248 @@ header {
     display: flex;
     justify-content: space-between;
     background-color: #ffd670;
-    margin-bottom: 14px;
+    margin-bottom: 104px;
 }
 .progressbar__name {
     color:#ffffff;
 }
-.progressbar__value{
+.progressbar__value {
     color:#87765e;
 }
-.progressbars--design__photoshop > *{
+.progressbars--design__photoshop {
     height: 42px;
     width: 515px;
-    
+    margin-bottom: 14px;
 }
-.progressbars--design__illustrator > *{
+.progressbars--design__illustrator {
     height: 42px;
-    width: 515px * 0.45;
+    width: 515px;
+    margin-bottom: 14px;
 }
-.progressbars--design__indesign > *{
+.progressbars--design__illustrator > * {
+    width: 75%;
+}
+.progressbars--design__indesign {
     height: 42px;
-    width: 515px * 0.15;
+    width: 515px;
+}
+.progressbars--design__indesign > * {
+    width: 35%;
 }
 .progressbars--coding__html {
     height: 42px;
-    width: 515px * 0.8;
+    width: 515px;
+    margin-bottom: 14px;
+}
+.progressbars--coding__html > * {
+    width: 80%;
 }
 .progressbars--coding__css {
     height: 42px;
-    width: 515px * 0.72;
+    width: 515px;
+    margin-bottom: 14px;
+}
+.progressbars--coding__css > * {
+    width: 72%;
 }
 .progressbars--coding__js {
     height: 42px;
-    width: 515px * 0.45;
+    width: 515px;
 }
+.progressbars--coding__js > * {
+    width: 45%;
+}
+.portfolio {
+    background-image: url("img/portfolio--background.png");
+}
+.portfolio__header {
+    padding-top: 98px;
+}
+.portfolio__header > h2 {
+    font-size: 35px;
+    font-weight: regular;
+    text-align: center;
+}
+.portfolio__header > h3 {
+    font-size: 16px;
+    font-weight: regular;
+    text-align: center;
+    color: #fff0ca;
+}
+.portfolio__header__white--line {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.project > hr {
+    width: 480px;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #fff;
+    margin-left: 0;
+}
+.portfolio--info--slidebar {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+.project > h2 {
+    font-size: 23px;
+    color:#ffffff;
+    margin-bottom: 29px;
+}
+.project > h3 {
+    font-size: 16px;
+    color:#fff1ce;
+    margin-bottom: 29px;
+}
+.project > hr:first {
+    margin-bottom: 20px;
+}
+.project > hr:nth-child(n+1) {
+    margin-bottom: 30px;
+}
+.project > ul {
+    list-style: none;
+    color:#fff;
+    margin-bottom: 28px;
+}
+.project > p {
+    width: 470px;
+    font-size: 15px;
+    color:#ffffff;
+    margin-bottom: 38px;
+}
+.project li::before {
+    content:url("img/portfolio_ul.png");
+}
+.project li > span, li > a {
+    margin-left: 10px;
+}
+/* General slider styles */
+.sim-slider {
+    display: block;
+    width: 970px;
+    height: 680px;
+    position: relative;
+} 
+
+.sim-slider img {
+    width: 100%;
+    height: auto;
+}
+.sim-slider-list {
+    margin: 20px;
+    padding: 0;
+    list-style-type: none;
+    position: relative;
+}
+
+.sim-slider-element {
+    width: 100%;
+    transition: opacity 1s ease-in;
+    opacity: 1;
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    display: block;
+}
+
+/* Navigation item styles */
+div.sim-slider-arrow-left,
+div.sim-slider-arrow-right {
+    width: 22px;
+    height: 40px;
+    position: absolute;
+    cursor: pointer;
+    opacity: 0.6;
+    z-index: 4;
+
+}
+
+div.sim-slider-arrow-left {
+    left: 20px;
+    top: 35%;
+    display: block;
+    background: url("img/картинки/arrow/left-arrow.png") no-repeat;
+    background-color: #c6ab6a;
+}
+
+div.sim-slider-arrow-right {
+    right: 20px;
+    top: 35%;
+    display: block;
+    background: url("http://pvbk.spb.ru/inc/slider/sim-files/sim-arrow-right.png") no-repeat;
+    background-color: #c6ab6a;
+}
+
+div.sim-slider-arrow-left:hover {
+    opacity: 1.0;
+}
+
+div.sim-slider-arrow-right:hover {
+    opacity: 1.0;
+}
+.portfolio-projects {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 590px;
+    margin-right: 590px;
+    font-size: 12px;
+    margin-bottom: 65px;
+}
+.portfolio-projects > .item {
+    width: max-content;
+    height: max-content;
+    padding: 15px;
+}
+.portfolio-projects > .item:hover {
+    border: 1px solid white;
+}
+.portfolio-project-samples {
+    margin-left: 150px;
+    margin-right: 150px;
+}
+.portfolio-project-samples .first-row {
+    display: flex;
+    justify-content: space-between;
+}
+.portfolio-project-samples .item {
+    width: 338px;
+    height: 338px;
+    position: relative;
+    text-align: center;
+    background: url("img/portfolioSquare.png");
+}
+.portfolio-project-samples .item h2 {
+    margin-top: 125px;
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+.portfolio-project-samples .item p {
+    font-size: 13px;
+    font-family: 'Roboto Slab', serif;
+    color: white;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 10px;
+}
+.portfolio-project-samples .item .cross {
+    position: absolute;
+    top: 222px;
+    left: 157px;
+}
+.portfolio-project-samples .first-row .item:nth-child(3) {
+    background:url("img/activeImg.png");
+}
+.portfolio-project-samples .second-row {
+    display: flex;
+    justify-content: space-between;
+    bottom: 85px;
+    margin-left: 195px;
+    margin-right: 195px;
+}
+
+
