@@ -397,5 +397,209 @@ div.sim-slider-arrow-right:hover {
     margin-left: 195px;
     margin-right: 195px;
 }
+.blog {
+    margin-top: 100px;
+    background-color: #fff;
+}
+.blog > .greyLine  {
+    margin-bottom: 20px;
+}
+.blog > div {
+    text-align: center;
+}
+.blog > h2 {
+    font-size: 35px;
+    font-family: 'Roboto Slab', serif;
+    color: #5b6074;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.blog > h3 {
+    font-size: 16px;
+    font-family: 'Roboto Slab', serif;
+    color: #a5aabe;
+    text-align: center;
+    margin-bottom: 100px;   
+}
+.blog-content {
+    display: flex;
+    margin-left: 448px;
+    margin-right: 360px;
+    justify-content: space-between;
+}
 
+.blog-content article {
+    text-align: left;
+    width: 670px;   
+}
 
+.blog-content .right-sidebar {
+    width: 300px;
+    text-align: left;
+}
+
+.blog-content .right-sidebar h3 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 13px;
+    margin-bottom: 40px;
+    color: #898d9d;
+}
+.blog-content .right-sidebar ul > li {
+    font-size: 13px;
+    color: #898d9d;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 30px;
+}
+.blog-content .right-sidebar ul:first-of-type {
+    margin-bottom: 40px;
+}
+.blog-content  hr {
+    width: 100%; 
+    border: none;
+    border-top: 1px solid #f8f8f8;
+}
+.blog-content .right-sidebar form > input {
+    border: none;
+    line-height:56px;
+    background-color:#f8f8f8;
+    background-image: url("img/searchIcon.png");
+    background-position: top 20px right 10px;
+    background-repeat: no-repeat;
+    padding-right: 10px;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+.blog-content article h2 {
+    font-size: 24px;
+    font-family: 'Roboto Slab', serif;
+    color: #373c4f;
+    margin-bottom: 30px;
+}
+.blog-content article h4 {
+    font-size: 11px;
+    font-family: 'Roboto Slab', serif;
+    color: #ccc9d6;
+    margin-bottom: 30px;
+}
+.blog-content .first-article-p {
+    margin-bottom: 50px;
+}
+.blog-content article h4:first {
+    margin-bottom: 30px;
+}
+.blog-content article p {
+    line-height: 1.6;
+    font-size: 15px;
+    font-family: 'Roboto Slab', serif;
+    color: #bfc1c9;
+}
+
+.blog-content article .tags {
+    font-size: 13px;
+    font-family: 'Roboto Slab', serif;
+    color: #898d9d;
+    margin: 30px 0;
+}
+.blog-content article img {
+    margin-bottom: 30px;
+}
+.blog-content .comments > h3 {
+    font-size: 15px;
+    font-family: 'Roboto Slab', serif;
+    color: #898d9d;
+    margin-top: 50px;
+}
+.blog-content .comment .comment__user h3 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 13px;
+    margin-bottom: 15px;
+    color:#ffdb83;
+}
+.blog-content .comment__user-data__date-reply {
+    font-size: 11px;
+    margin-bottom: 20px;
+    font-family: 'Roboto Slab', serif;
+}
+.blog-content .comment__user-data__date-reply p {
+    color:#c4c0cf;
+}
+.blog-content .comment__user-data__date-reply button {
+    border:none;
+    background: none;
+    height: max-content;
+    color: #ffd670;
+}
+.blog-content .comment__user-data__date-reply button:focus{
+    border:none;
+    background:none;
+}
+.blog-content .comment  .comment__user {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.blog-content .comment .comment__user hr {
+    margin-top: 40px;
+}
+
+.blog-content .comment .comment__user img {
+    margin-right: 20px;
+    height: 70px;
+    width: 70px;
+}
+.blog .comment-add-form {
+    width: 670px;
+    margin-left: 448px;
+    margin-right: 360px;
+}
+.blog .comment-add-form h2{
+     font-family: 'Roboto Slab', serif;
+     font-size: 15px;
+     color:#898d9d;
+     margin-bottom: 30px;
+     margin-top: 70px;
+     text-align: left;
+}
+.blog .comment-add-form > p {
+    font-family: 'Roboto Slab', serif;
+    font-size: 13px;
+    color:#898d9d;
+    text-align: left;
+    margin-bottom: 40px;
+}
+.blog .comment-add-form .form-name__email {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.blog .comment-add-form .form-name__email input{
+    width: 325px;
+    height: 58px;
+    font-size: 16px;
+    background-color: #f8f8f8;
+    border:none;
+    border-radius: 5px;
+    background-image: url("img/yellowStar.png");
+    background-position: top 20px left 120px;
+    background-repeat: no-repeat;
+}
+.blog .comment-add-form .form-name__email input::placeholder,
+ textarea::placeholder {
+    padding-top: 20px;
+    padding-left: 30px;
+    font-family: 'Roboto Slab', serif;
+    font-size: 16px;
+    color: #cacaca;
+}
+.blog .comment-add-form  textarea {
+    width: 670px;
+    height: 205px;
+    background-color: #f8f8f8;
+    border:none;
+    border-radius: 5px;
+    background-image: url("img/yellowStar.png");
+    background-position: top 20px left 110px;
+    background-repeat: no-repeat;
+}
