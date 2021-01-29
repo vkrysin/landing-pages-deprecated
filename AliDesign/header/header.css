@@ -1,5 +1,8 @@
 @import './_black/header_black.css';
+@import './_regular/header_regular.css';
+@import './_bold/header_bold.css';
+@import './_ligth/header_light.css';
 
 .header {
-    font-size: 30px;
+    font-size: 40px;
 }
