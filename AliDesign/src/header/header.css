@@ -2,7 +2,11 @@
 @import './_regular/header_regular.css';
 @import './_bold/header_bold.css';
 @import './_ligth/header_light.css';
+@import './header_margin-bottom/header_margin-bottom_1vh.css';
+@import './header_margin-bottom/header_margin-bottom_2vh.css';
 
 .header {
+    font-family: Roboto, serif;
     font-size: 40px;
+    color: #262f32;
 }

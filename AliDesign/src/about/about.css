@@ -1,0 +1,13 @@
+.about {
+    display: flex;
+    justify-content: center;
+    max-width: 1440px;
+    margin: auto;
+}
+.about > img {
+    width: 100%;
+}
+.about__container {
+    margin: 0 50px;
+    min-width: 450px;
+}
