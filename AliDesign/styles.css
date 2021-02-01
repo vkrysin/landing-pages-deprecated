@@ -2,7 +2,11 @@
 @import './src/header/header.css';
 @import './src/menu/menu.css';
 @import './node_modules/normalize.css/normalize.css';
+@import './src/advantages/advantages.css';
 
+header {
+    background-color: #f3f3f3;
+}
 p {
     font-family: Roboto, serif;
     color: #262f32;

@@ -1,0 +1,6 @@
+@import '../left-sidebar/left-sidebar.css';
+@import '../right-sidebar/right-sidebar.css';
+
+.advantages {
+    display: flex;
+}

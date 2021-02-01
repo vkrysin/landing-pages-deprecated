@@ -1,5 +1,4 @@
 const path = require('path')
-const CopyPlugin = require("copy-webpack-plugin");
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
@@ -9,7 +8,7 @@ module.exports = {
   mode: 'development',
   entry: {
     index: [ './index.js',
-            './styles.css'
+            './styles.css',
     ]
   },
   optimization: {
@@ -24,8 +23,16 @@ module.exports = {
                    /*process.env.NODE_ENV !== 'production' ? 'style-loader' :*/ MiniCssExtractPlugin.loader,
                    'css-loader'
                   ]
+            },
+            {
+                test: /\.png$/,
+                type: 'asset'
+            },
+            {
+                test: /\.(html)$/,
+                use: ['html-loader']
             }
-      ]
+        ]
   },
   devServer: {
         historyApiFallback: true,
@@ -37,21 +44,21 @@ module.exports = {
   },
 
   plugins: [
-    new HtmlWebpackPlugin({template: './index.html'}),
+    new HtmlWebpackPlugin(
+      {
+        template: './index.html'
+      }),
     new MiniCssExtractPlugin({
       filename: '[name].css',
-    }),
+      }),
     new CleanWebpackPlugin(),
     new webpack.HotModuleReplacementPlugin(),
-    new CopyPlugin({
-      patterns: [
-        { from: "img", to: "img" },
-      ],
-    }),
   ],
 
   output: {
     filename: '[name].js',
-    path: path.resolve(__dirname, 'dist')
+    path: path.resolve(__dirname, 'dist'),
+    assetModuleFilename: 'img/[name][ext]',
+    publicPath: '',
   }
 };

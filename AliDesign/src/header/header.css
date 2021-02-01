@@ -4,9 +4,10 @@
 @import './_ligth/header_light.css';
 @import './header_margin-bottom/header_margin-bottom_1vh.css';
 @import './header_margin-bottom/header_margin-bottom_2vh.css';
+@import './header_color/header_color_white.css';
+@import './header_color/header_color_black.css';
 
 .header {
     font-family: Roboto, serif;
     font-size: 40px;
-    color: #262f32;
 }

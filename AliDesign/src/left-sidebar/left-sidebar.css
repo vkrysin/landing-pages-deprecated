@@ -1,0 +1,10 @@
+@import './left-sidebar__item/left-sidebar__item.css';
+
+.left-sidebar {
+    display: flex;
+    flex-direction: column;
+    background-image: url('../../img/left-sidebar.png');
+    background-repeat:no-repeat;
+    width: 45%;
+    padding:70px 0;
+}
