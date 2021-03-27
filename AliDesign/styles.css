@@ -1,9 +1,12 @@
 @import './src/about/about.css';
 @import './src/header/header.css';
 @import './src/menu/menu.css';
-@import './node_modules/normalize.css/normalize.css';
+@import './node_modules/reset-css/reset.css';
 @import './src/advantages/advantages.css';
 
+* {
+    box-sizing: border-box;
+}
 header {
     background-color: #f3f3f3;
 }
