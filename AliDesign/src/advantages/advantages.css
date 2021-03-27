@@ -1,0 +1,9 @@
+@import '../left-sidebar/left-sidebar.css';
+@import '../right-sidebar/right-sidebar.css';
+
+.advantages {
+    display: flex;
+    max-width: 1440px;
+    justify-content: center;
+    margin: auto;
+}

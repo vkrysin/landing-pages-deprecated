@@ -1,0 +1,11 @@
+@import './_black/header_black.css';
+@import './_regular/header_regular.css';
+@import './_bold/header_bold.css';
+@import './_ligth/header_light.css';
+@import './header_color/header_color_white.css';
+@import './header_color/header_color_black.css';
+
+.header {
+    font-family: Roboto, serif;
+    font-size: 40px;
+}
