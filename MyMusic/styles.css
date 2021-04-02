@@ -1,0 +1,21 @@
+
+* {
+    box-sizing: border-box;
+}
+
+/*mobile small, middle, large*/
+@media (max-width: 424px) {
+
+}
+/*tablet*/
+@media (min-width: 424px) and (max-width: 768px) {
+
+}
+/*laptop*/
+@media (min-width: 769px) and (max-width:1023px){ 
+
+}
+/*large laptop*/
+@media (min-width: 1024px) and (max-width:1440px) { 
+
+}
